@@ -76,16 +76,16 @@ export default {
       loader.hide()
     },
     goToDetail(customerId) {
-      this.$router.push({
-        path: '/template/p3/detail',
-        query: { id: customerId }
-      })
+      // this.$router.push({
+      //   path: '/template/p3/detail',
+      //   query: { id: customerId }
+      // })
 
       // http://localhost:8080/template/p3/detail?id=6279074d6a80184dc24175f8
       // http://localhost:3000/users/6279074d6a80184dc24175f8
       // http://localhost:3000/products/6279074d6a80184dc24175f8
-
-      //   this.$router.push({ name: 'DetailView', params: { id: customerId } })
+      console.log('params', customerId)
+      this.$router.push({ name: 'DetailView', params: { id: customerId } })
       // http://localhost:8080/template/p3/detail
     },
     goToCreate() {

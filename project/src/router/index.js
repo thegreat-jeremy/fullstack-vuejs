@@ -409,7 +409,7 @@ const routes = [
       )
   },
   {
-    path: '/template/p3/detail',
+    path: '/template/p3/detail/:id',
     name: 'DetailView',
     component: () =>
       import(
@@ -417,7 +417,7 @@ const routes = [
       )
   },
   {
-    path: '/template/p3/edit',
+    path: '/template/p3/edit/:id',
     name: 'EditView',
     component: () =>
       import(

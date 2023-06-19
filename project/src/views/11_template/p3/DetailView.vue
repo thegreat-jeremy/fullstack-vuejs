@@ -56,9 +56,9 @@ export default {
   setup() {},
   created() {
     // console.log(this.$route.query.id)
-    this.id = this.$route.query.id
-    // console.log(this.$route.params)
-    // this.id = this.$route.params.id
+    // this.id = this.$route.query.id
+    console.log(this.$route.params)
+    this.id = this.$route.params.id
   },
   mounted() {
     this.getCustomer()
